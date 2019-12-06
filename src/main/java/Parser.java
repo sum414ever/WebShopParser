@@ -55,7 +55,7 @@ public class Parser {
       requestCounter++;
       Element element = document.body();
 
-      String productName = element.getElementsByAttributeValue("class", "iay39c-1 faQObc").text();
+      String productName = element.getElementsByAttributeValue("data-test-id", "ProductName").text();
       String brand = element.getElementsByAttributeValue("class", "iay39c-0 gyEZgA").attr("alt");
       String color = element.getElementsByAttributeValue("class", "sc-12rq7nw-3 ivQbqZ").text();
       String price = element.getElementsByAttributeValue("class", "sc-137x7zs-0 x3voc9-0 clDOsP")
